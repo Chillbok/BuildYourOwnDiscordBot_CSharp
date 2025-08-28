@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 
 public class Program
 {
-    private DiscordSocketClient _client;
+    private DiscordSocketClient _client = null!;
 
     public static void Main(string[] args)
         => new Program().MainAsync().GetAwaiter().GetResult();
